@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Itim');
+html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Itim', cursive;
+  }
+  table{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  body{font-family: 'Itim', cursive;}
+  .tr_order{
+    background-color: burlywood;
+    width: 90%;
+    height: auto;
+    border: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  
+  li{
+      list-style: none;
+      border: 1px solid black;
+      margin: 0px;
+      padding: 0px;
+      text-align: -webkit-center;
+    }
+    .section{
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+  }
+  .td_class{
+    border: 3px solid black;
+    background-color: blanchedalmond;
+    width: 250px;
+    height: 300px;
+  }
+  .img_order{
+    width: 150px;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+  }
+  .modal-content1 {
+    background-color: #3e3e3e;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+  }
+  .h1_con{
+    font-size: 50px;
+    color: #ffffff;
+  }
+  .buttonyes{
+    width:  70%;
+    height: 70px;
+    font-size: 40px;
+    border-radius: 5px;
+    background-color:palegreen;
+    font-family: 'Itim', cursive;
+  }
+  .buttonno{
+    width:  30%;
+    height: 70px;
+    font-size: 40px;
+    border-radius: 5px;
+    background-color:orangered;
+    font-family: 'Itim', cursive;
+  }
+  .button_del{
+    width: 30%;
+    margin: auto;
+    background: orangered;
+    display: block;
+    font-size: 20px;
+    font-family: 'Itim', cursive;
+  }
+  .button1{
+    width: 40%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color:palegreen;
+    margin-bottom: 5px;
+    font-family: 'Itim', cursive;
+  }
+  .button2{
+    width: 30%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color:orangered;
+    margin-bottom: 5px;
+    font-family: 'Itim', cursive;
+  }
+  .div_order{
+    background-color: burlywood;
+    width: 90%;
+    height: auto;
+    border: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-content{
+    background-color: lightpink;
+    border-radius: 10px;
+  }
+  
+  .modal-content a{
+  font-size: 30px;
+  color: #000;
+  }

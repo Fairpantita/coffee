@@ -1,0 +1,192 @@
+html{
+    width: 100%;
+    height: 100%;
+  }
+  body{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background-color: antiquewhite;
+  }
+  .textlist{
+    font-size: 30px;
+  }
+  .divdrag{
+  width: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  }       
+  table{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  }
+  #head_table{
+  background-color: lightpink;
+  }
+  .td_sub{
+      width: 20%;
+      border: 2px solid rgb(0, 0, 0);
+  }
+  #listorder{
+      width: 100%;
+      border: 2px solid rgb(0, 0, 0);
+      font-size: 50px;
+  }
+  #listorder1{
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 50px;
+}
+  .td_list{
+      background-color: antiquewhite;
+      width: 16.66666667%;
+      border: 2px solid rgb(0, 0, 0);
+      font-size: 30px;
+  }
+  .top{
+      width: 100%;
+      height: 50px;
+      background-color: coral;
+  }
+  .top1{
+  width: 80%;
+  }
+  .top2{
+  width: 20%;
+  }
+  .icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  .icon-bar a {
+    float: right;
+    width: 20%;
+    text-align: center;
+    padding: 6px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+  .icon-bar a:hover {
+    background-color: rgb(19, 248, 11);
+  }
+  #h_icon{
+    width: 80%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+  .active {
+    background-color: rgb(84, 206, 80);
+  }
+  /*  */
+  .div-bar {
+    text-align: -webkit-center;
+    width: 100%;
+    height: 63px;
+    background-color: #000000;
+    overflow: auto;
+  }
+  .div-bar a {
+    float: left;
+    width: 10%;
+    text-align: center;
+    padding: 6px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+  .div-bar a:hover {
+    background-color: #000;
+  }
+  #h_div{
+    width: 80%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+  .activediv {
+    background-color: #d96c00;
+  }
+  .clear_button{
+    margin-top: 10px;
+  }
+  .tinput{
+      font-size: 30px;
+      text-align: center;
+      width: 70%;
+      height: 40px;
+      margin-top: 13px;
+      
+    }
+    .div_total{
+    width: 100%;
+    background-color: #000000;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    color: aliceblue;
+    }
+    select{
+    padding: 7px;
+    width: 10%;
+    height: 44px;
+    font-size: 25px;
+    text-align-last:center;
+    background-color: lightblue;
+    margin: auto;
+    display: inline-block;
+    
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-content{
+    background-color: lightpink;
+    border-radius: 10px;
+  }
+  
+  .modal-content a{
+  font-size: 30px;
+  color: #000;}
