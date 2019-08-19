@@ -1,0 +1,36 @@
+@font-face {
+    font-family: montserrat-regular;
+    src: url(../font/montserrat-regular.ttf);
+}
+body
+{
+background: #ffffff;
+font-family: 'montserrat-regular', sans-serif;
+font-weight: 400;
+margin: auto;
+}
+h1,h2,h3,h4,h5,h6,p,b,a{
+    font-family: 'montserrat-regular', sans-serif;
+}
+
+.titlesmall{
+font-weight: 700;
+ font-size: 30px;
+}
+.small{
+font-size: 20px;
+}
+.maintable th{
+height: 70px;
+text-align: center;
+vertical-align: middle;
+}
+
+
+.grid{
+margin-bottom: 16px;
+}
+.w3-container{
+    margin: auto;
+    text-align: -webkit-center;
+}
