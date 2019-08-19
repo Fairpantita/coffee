@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee-Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/pc.css">
+</head>
+<body onload="load();set_time();">
+    <!-- debug -->
+    <div id="myModal" class="modal"> 
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <center>
+          <a href="boss/" target="_blank">boss</a></br>
+          <a href="mobile.html" target="_blank">mobile</a></br>
+          <a href="pc.html" target="_blank">Pc</a></br>
+          <a href="order.html" target="_blank">order</a></br>
+          <a href="Sales history.html" target="_blank">sales history</a>
+        </center>
+        </div>
+       </div>
+    
+    <div class="icon-barr">
+        <a href="https://www.facebook.com/"target="_blank"><img class="icon_img" src="img/facee.png"></i></a>
+        <a href="https://www.instagram.com/?hl=th"target="_blank"><img class="icon_img" src="img/ig.png"></i></a>
+        <a href="https://mail.google.com/mail/u/0/#"target="_blank"><img class="icon_img" src="img/goo.png" ></i></a>
+        <a href="http://line.me/ti/p/~ionlynai"target="_blank"><img class="icon_img" src="img/line.png"></i></a>
+      </div>
+    <div class="modal" id="confime">
+        <div class="modal-content1">
+          <h1 class="h1_con">confirm your order ?</h1>
+          <button class="buttonyes"onclick='add_ajax();'>Yes</button><button class="buttonno" onclick="no_confirm();">No</button>
+        </div>
+      </div>
+<div class="icon-bar">
+    <div href="#" id="h_icon">BIS Cafe'</div> 
+</div>
+    <table>
+    <td class="td_drag">
+    <input class="tinput"type="text" id="myInput" onkeyup="auto()" placeholder="Search for names.." title="Type in a name">
+    <section id="products" class="products">
+    <div id="listorder"></div>
+    </section>
+    </td>
+    <td id="drop" class="td_drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div id="total" class="total">Order : 0 -- Total price : 0 bath</div>
+    <section class="section">
+    <table id="table_order">
+    
+    </table>
+    
+    </section>
+    <div class="div_button"><button id="yes" class="buttonyes" onclick="confirm();">Submit</button><button id="no"class="buttonno" onclick="window.location.reload(false);">Clear</button></div>
+    </td>
+    </table>
+        <!-- input ส่งค่า ajax -->
+<input id="order_name"  type="hidden">
+<input id="order_sweet"  type="hidden">
+<input id="order_time"  type="hidden">
+    <script src="db/data2.js"></script>
+    <script src="java/pc.js"></script>
+</body>
+</html>

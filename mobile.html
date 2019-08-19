@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile_coffeeshop</title>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=100%">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body onload="load();set_time();">
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <div id="show_order">
+      <section class="section">
+      <table id="table_order">
+        
+      </table>
+    </section>
+    </div>
+    <div id="total" class="total">Order : 0 -- Total price : 0 bath</div>
+    <button class="buttonyes" onclick="confirm();">Submit</button><button class="buttonno" onclick="closeNav();">Add more</button>
+  </div>
+</div>
+<!-- ยืนยัน -->
+<div class="modal" id="confime">
+  <div class="modal-content1">
+    <h1 class="h1_con">confirm your order ?</h1>
+    <button class="buttonyes" onclick="add_ajax();">Yes</button><button class="buttonno" onclick="no_confirm();">No</button>
+  </div>
+</div>
+<div class="icon-bar">
+  <a href="#" class="active" onclick="C_order();open_modal();"><img class="iconn_img" src="img/cart1.png"></a>
+    <div href="#" id="h_icon">BIS Cafe'</div> 
+</div>
+    <input class="tinput"type="text" id="myInput" onkeyup="auto()" placeholder="Search for names.." title="Type in a name">
+    <section id="products" class="products">
+    <div id="listorder"></div>
+    </section>
+    <!-- input ส่งค่า ajax -->
+<input id="order_name"  type="hidden">
+<input id="order_sweet"  type="hidden">
+<input id="order_time"  type="hidden">
+    <script src="db/data2.js"></script>
+    <script src="java/mobile.js"></script>
+</body>
+</html>

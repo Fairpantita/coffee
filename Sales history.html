@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sale Record</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/sell.css">
+
+</head>
+<body onload="load();">
+    <!-- debug -->
+    <div id="myModal" class="modal"> 
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <center>
+          <a href="boss/" target="_blank">boss</a></br>
+          <a href="mobile.html" target="_blank">mobile</a></br>
+          <a href="pc.html" target="_blank">Pc</a></br>
+          <a href="order.html" target="_blank">order</a></br>
+          <a href="Sales history.html" target="_blank">sales history</a>
+        </center>
+        </div>
+       </div>
+        <div class="icon-bar">
+                <a href="#" class="active" onclick="exportTableToCSV('db.csv')"><img src="img/excal.png" width="50px"></a> 
+                <div href="#" id="h_icon">Sale Record</div> 
+            </div>
+            <div class="div-bar">
+              <!-- <a href="#" class="activediv" onclick=""><img class = "clear_button"src="img/wrong.png" width="50px"></a>  -->
+              <select class="select" onchange="select_input =this.value;">
+                    <option value="0">name</option>
+                    <option value="1">year</option>
+                    <option value="2">month</option>
+                    <option value="3">day</option>
+                  </select>
+              <input class="tinput"type="text" id="myInput" onkeyup="auto(select_input)" placeholder="Search" title="Type in a name">
+          </div>
+    </table>
+<section id="products" class="products">
+    <table id="listorder1">
+        <tr class="tr1">
+            <td id ="head_table"class="td_list">Name</td>
+            <td id ="head_table"class="td_list">Year</td>
+            <td id ="head_table"class="td_list">Month</td>
+            <td id ="head_table"class="td_list">day</td>
+            <td id ="head_table"class="td_list">Cost</td>
+            <td id ="head_table"class="td_list">H/Min/Sec</td>
+        </tr>
+    </table>
+    <table id="listorder"></table>
+    <div id="total" class="div_total"></div>
+</section>   
+    
+    <script src="db/data2.js"></script>
+    <script src="db/history.js"></script>
+    <script src="java/sell.js"></script>
+
+</body>
+</html>

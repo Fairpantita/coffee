@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1 id="show"></h1>
+    <script>
+        x = screen.width;
+        y = screen.height;
+        document.getElementById('show').innerHTML = x+"X"+y;
+        if (x <= 900) {
+            window.open("mobile.html")
+            window.close();
+        }
+        else{
+            window.open("pc.html",'_self')
+            window.close();
+        }
+    </script>
+</body>
+</html>

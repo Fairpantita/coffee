@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Order_coffeeshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body onload="load();">
+  <!-- debug -->
+  <div id="myModal" class="modal"> 
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <center>
+      <a href="boss/" target="_blank">boss</a></br>
+      <a href="mobile.html" target="_blank">mobile</a></br>
+      <a href="pc.html" target="_blank">Pc</a></br>
+      <a href="order.html" target="_blank">order</a></br>
+      <a href="Sales history.html" target="_blank">sales history</a>
+    </center>
+    </div>
+   </div>
+    <div class="modal" id="confime">
+        <div class="modal-content1">
+          <h1 class="h1_con" id="h1_con">confirm your delete order ?</h1>
+          <div id = "del_button"><button class="buttonyes"onclick="del_array()">Yes</button><button class="buttonno" onclick="no_confirm();">No</button></div>
+          <div id = "add_button"><button class="buttonyes"onclick="set_time();set_del_ajax();">Yes</button><button class="buttonno" onclick="no_confirm();">No</button></div>
+        </div>
+      </div>
+
+<table id="tb_order">
+
+</table>
+<!-- del -->
+<input id="id_del"  type="hidden">
+<input id="id_order_del"  type="hidden">
+<!-- add -->
+<input id="history_name"  type="hidden">
+<input id="history_year"  type="hidden">
+<input id="history_month"  type="hidden">
+<input id="history_day"  type="hidden">
+<input id="history_time"  type="hidden">
+
+<script src="db/data2.js"></script>
+<script src="db/order.js"></script>
+<script src="java/order.js"></script>
+</body>
+</html>
